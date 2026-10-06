@@ -210,6 +210,9 @@
 
   <script>
     lucide.createIcons();
+    const setupSection = document.getElementById("setup");
+    const servicesSection = document.getElementById("services");
+    if (setupSection && servicesSection) setupSection.after(servicesSection);
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
     menuToggle.addEventListener("click", () => {
