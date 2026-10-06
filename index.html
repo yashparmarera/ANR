@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anriyax | UAE Business Setup & Digital Growth</title>
+  <meta name="description" content="Set up your UAE business with clear guidance on mainland, free zones, licensing, visas and digital growth services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root { --ink: #172321; --muted: #62706b; --paper: #f7f6f1; --line: #dfe5df; --sage: #dce9df; --green: #1d5145; --coral: #e87958; --gold: #e9bf72; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: "Manrope", sans-serif; }
+    h1, h2, h3, .serif { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { color: var(--coral); font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; padding: 0 22px; font-weight: 800; font-size: .86rem; transition: transform .2s, box-shadow .2s, background .2s; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 25px rgba(23,35,33,.14); }
+    .btn-primary { color: #fff; background: var(--coral); }
+    .btn-dark { color: #fff; background: var(--green); }
+    .btn-ghost { color: var(--green); border: 1px solid #b7c9bb; }
+    .section { padding: 100px 0; }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .card { border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.62); }
+    .pill { border: 1px solid #c8d6cc; border-radius: 999px; padding: 9px 14px; font-size: .78rem; font-weight: 700; color: var(--green); background: #fff; }
+    .brand-mark { position: relative; display: block; width: 142px; height: 54px; overflow: hidden; flex: 0 0 auto; }
+    .brand-mark img { position: absolute; width: 184px; max-width: none; height: 184px; left: -29px; top: -68px; }
+    input, select, textarea { width: 100%; min-height: 48px; border: 1px solid #cbd6cf; border-radius: 10px; background: #fff; padding: 12px 14px; color: var(--ink); font: inherit; font-size: .9rem; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: var(--coral); box-shadow: 0 0 0 3px rgba(232,121,88,.16); }
+    label { display: block; margin-bottom: 7px; color: #34453f; font-size: .76rem; font-weight: 800; }
+    @media (max-width: 700px) { .container { width: min(100% - 28px, 1160px); } .section { padding: 68px 0; } .hero-grid { min-height: auto !important; padding: 62px 0 76px; } }
+    @media (prefers-reduced-motion: reduce) { *, html { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:p-3">Skip to content</a>
+  <header id="top" class="sticky top-0 z-50 border-b border-[#e6ebe5] bg-[#f7f6f1]/95 backdrop-blur">
+    <div class="container flex h-[76px] items-center justify-between gap-6">
+      <a href="#hero" class="flex min-h-0 items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e87958] focus:ring-offset-2" aria-label="Anriyax home">
+        <span class="brand-mark" aria-hidden="true"><img src="images/Anriyaxlogo.webp" alt=""></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-[#53635d] lg:flex" aria-label="Main navigation">
+        <a href="#setup" class="hover:text-[#e87958]">Business setup</a>
+        <a href="#jurisdictions" class="hover:text-[#e87958]">Jurisdictions</a>
+        <a href="#calculator" class="hover:text-[#e87958]">Cost estimator</a>
+        <a href="#services" class="hover:text-[#e87958]">All services</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#consultation" class="btn btn-primary text-xs sm:text-sm">Free consultation <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+        <button id="menu-toggle" type="button" class="inline-flex min-h-12 min-w-12 items-center justify-center rounded-full border border-[#b7c9bb] text-[#1d5145] lg:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu" class="h-5 w-5"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="container hidden border-t border-[#e6ebe5] py-3 lg:hidden" aria-label="Mobile navigation">
+      <div class="grid gap-1 pb-2 text-sm font-bold text-[#53635d]">
+        <a href="#hero" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">Home</a>
+        <a href="#setup" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">Business setup</a>
+        <a href="#jurisdictions" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">Jurisdictions</a>
+        <a href="#activities" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">Business activities</a>
+        <a href="#calculator" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">Cost estimator</a>
+        <a href="#services" class="rounded-xl px-4 py-3 hover:bg-[#dce9df]">All services</a>
+        <a href="#consultation" class="rounded-xl bg-[#e87958] px-4 py-3 text-white">Free consultation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="relative scroll-mt-24 overflow-hidden bg-[#dce9df]">
+      <div class="container hero-grid grid min-h-[650px] items-center gap-12 py-20 lg:grid-cols-[1.02fr_.98fr]">
+        <div class="reveal">
+          <div class="eyebrow mb-5">UAE business setup, made clear</div>
+          <h1 class="max-w-[680px] text-4xl leading-[1.08] tracking-[-.02em] text-[#173d34] sm:text-6xl sm:leading-[1.03] lg:text-[76px]">Start in the UAE or India.<br><span class="text-[#e87958]">Grow with confidence.</span></h1>
+          <p class="mt-7 max-w-[560px] text-lg leading-8 text-[#50635b]">From choosing the right jurisdiction to securing your licence, visas and digital infrastructure, Anriyax turns a complex setup into a clear next step.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#calculator" class="btn btn-primary">Estimate setup cost <i data-lucide="calculator" class="h-4 w-4"></i></a>
+            <a href="#jurisdictions" class="btn btn-ghost">Explore jurisdictions <i data-lucide="arrow-down" class="h-4 w-4"></i></a>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs font-bold text-[#527065]">
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-[#e87958]"></i>Mainland & free zones</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-[#e87958]"></i>Activity-led advice</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-[#e87958]"></i>One accountable team</span>
+          </div>
+        </div>
+        <div class="reveal relative">
+          <div class="absolute -right-5 -top-5 h-28 w-28 rounded-full border border-[#f2a188]"></div>
+          <div class="relative overflow-hidden rounded-[28px] bg-[#173d34] p-3 shadow-2xl shadow-[#173d34]/20">
+            <img src="images/hero-main-94bf28e5416849ff899acb778ef88c67.png" alt="Modern workspace with digital business tools" class="h-[390px] w-full rounded-[20px] object-cover opacity-80 sm:h-[470px]" loading="eager">
+            <div class="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/20 bg-[#173d34]/90 p-5 text-white backdrop-blur">
+              <div class="flex items-center justify-between gap-4"><span class="text-xs font-bold uppercase tracking-[.14em] text-[#b8d5bd]">Your setup path</span><span class="rounded-full bg-[#e87958] px-3 py-1 text-[11px] font-extrabold">01 / 04</span></div>
+              <div class="mt-3 flex items-center gap-2 text-sm font-bold"><span class="h-2 w-2 rounded-full bg-[#e87958]"></span> Choose your jurisdiction</div>
+              <div class="mt-3 h-1.5 overflow-hidden rounded-full bg-white/20"><div class="h-full w-1/4 rounded-full bg-[#e87958]"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup" class="section bg-[#f7f6f1]">
+      <div class="container">
+        <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div><div class="eyebrow mb-4">A better way to begin</div><h2 class="max-w-[600px] text-4xl leading-tight text-[#173d34] sm:text-5xl">The right setup starts with the right questions.</h2></div>
+          <p class="max-w-[330px] text-sm leading-6 text-[#62706b]">No generic packages. We shape the recommendation around what you do, where you want to operate and how you plan to grow.</p>
+        </div>
+        <div class="mt-12 grid gap-4 md:grid-cols-4">
+          <div class="card reveal p-6"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-[#e87958] text-white"><i data-lucide="map-pin" class="h-5 w-5"></i></span><h3 class="mt-6 text-2xl text-[#173d34]">1. Where</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Choose a mainland or free zone jurisdiction that fits your market.</p></div>
+          <div class="card reveal p-6"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-[#173d34] text-white"><i data-lucide="briefcase-business" class="h-5 w-5"></i></span><h3 class="mt-6 text-2xl text-[#173d34]">2. What</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Match your business activity to the right licence category.</p></div>
+          <div class="card reveal p-6"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-[#e9bf72] text-[#173d34]"><i data-lucide="file-check-2" class="h-5 w-5"></i></span><h3 class="mt-6 text-2xl text-[#173d34]">3. Setup</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Handle documentation, approvals, office and visa requirements.</p></div>
+          <div class="card reveal p-6"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-[#dce9df] text-[#173d34]"><i data-lucide="trending-up" class="h-5 w-5"></i></span><h3 class="mt-6 text-2xl text-[#173d34]">4. Grow</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Launch your brand, website, automations and customer workflows.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jurisdictions" class="section bg-[#173d34] text-white">
+      <div class="container">
+        <div class="reveal max-w-[720px]"><div class="eyebrow mb-4 text-[#f2a188]">Choose your jurisdiction</div><h2 class="text-4xl leading-tight sm:text-5xl">A UAE base built around your ambition.</h2><p class="mt-5 leading-7 text-[#b8d5bd]">Compare the flexibility of mainland with the focused advantages of a free zone. We help you choose — without the jargon.</p></div>
+        <div class="mt-12 grid gap-5 lg:grid-cols-2">
+          <article class="reveal rounded-[22px] border border-[#477267] bg-[#214b40] p-7 sm:p-9"><div class="flex items-start justify-between gap-4"><div><div class="text-xs font-extrabold uppercase tracking-[.16em] text-[#f2a188]">Open market access</div><h3 class="mt-3 text-3xl">Mainland</h3></div><i data-lucide="building-2" class="h-8 w-8 text-[#e9bf72]"></i></div><p class="mt-4 text-sm leading-6 text-[#c6ddd0]">Ideal when you want to trade directly across the UAE, work with government entities or grow a locally visible operation.</p><ul class="mt-6 space-y-3 text-sm text-[#e9ddd0]"><li class="flex gap-3"><i data-lucide="check" class="h-4 w-4 shrink-0 text-[#f2a188]"></i>Operate across the UAE</li><li class="flex gap-3"><i data-lucide="check" class="h-4 w-4 shrink-0 text-[#f2a188]"></i>Broad activity and office options</li><li class="flex gap-3"><i data-lucide="check" class="h-4 w-4 shrink-0 text-[#f2a188]"></i>Strong fit for local trading</li></ul><a href="#consultation" class="mt-7 inline-flex items-center gap-2 text-sm font-extrabold text-[#f2a188]">Discuss mainland setup <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></article>
+          <article class="reveal rounded-[22px] border border-[#477267] bg-[#214b40] p-7 sm:p-9"><div class="flex items-start justify-between gap-4"><div><div class="text-xs font-extrabold uppercase tracking-[.16em] text-[#e9bf72]">Focused & efficient</div><h3 class="mt-3 text-3xl">Free zones</h3></div><i data-lucide="layers-3" class="h-8 w-8 text-[#e9bf72]"></i></div><p class="mt-4 text-sm leading-6 text-[#c6ddd0]">A practical route for founders who value streamlined setup, sector ecosystems and packages designed around their activity.</p><div class="mt-6 flex flex-wrap gap-2"><span class="pill">IFZA</span><span class="pill">Meydan</span><span class="pill">SHAMS</span><span class="pill">SPC</span><span class="pill">ANC</span></div><a href="#consultation" class="mt-7 inline-flex items-center gap-2 text-sm font-extrabold text-[#e9bf72]">Compare free zones <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></article>
+        </div>
+        <div class="reveal mt-10 border-t border-[#477267] pt-7"><div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"><p class="text-sm font-bold text-[#c6ddd0]">Popular emirate destinations</p><div class="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#e9ddd0]"><span>Dubai</span><span>Abu Dhabi</span><span>Sharjah</span><span>Ajman</span><span>Ras Al Khaimah</span><span>Fujairah</span><span>Umm Al Quwain</span></div></div></div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section bg-[#f0eee6]">
+      <div class="container grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-start">
+        <div class="reveal"><div class="eyebrow mb-4">Business setup cost</div><h2 class="text-4xl leading-tight text-[#173d34] sm:text-5xl">Get an indicative range in 60 seconds.</h2><p class="mt-5 leading-7 text-[#62706b]">Use the estimator to orient your budget. Your final quote will reflect the exact activity, authority fees and support you choose.</p><div class="mt-8 flex items-center gap-3 text-sm font-bold text-[#527065]"><i data-lucide="shield-check" class="h-5 w-5 text-[#e87958]"></i>No obligation · No hidden follow-up</div></div>
+        <form id="cost-form" class="reveal rounded-[22px] bg-white p-6 shadow-xl shadow-[#173d34]/5 sm:p-8">
+          <div class="mb-7 flex items-center justify-between"><div><p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">Quick estimate</p><h3 class="mt-1 text-2xl text-[#173d34]">Tell us about your plan</h3></div><span id="estimate-step" class="rounded-full bg-[#dce9df] px-3 py-1 text-xs font-extrabold text-[#1d5145]">1 / 5</span></div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div><label for="activity">Business activity</label><select id="activity" required><option value="">Select category</option><option>Professional / Support Services</option><option>Technology, Crypto & Web3</option><option>Trading, Food & Logistics</option><option>Construction & Engineering</option><option>Healthcare & Education</option><option>Real Estate & Facility Services</option></select></div>
+            <div><label for="jurisdiction">Setup preference</label><select id="jurisdiction" required><option value="">Choose one</option><option value="mainland">Mainland</option><option value="freezone">Free Zone</option><option value="unsure">Help me decide</option></select></div>
+            <div><label for="owners">Number of owners</label><select id="owners" required><option value="1">1 owner</option><option value="2">2–3 owners</option><option value="4">4+ owners</option></select></div>
+            <div><label for="visas">Number of visas</label><select id="visas" required><option value="0">No visas</option><option value="1">1–2 visas</option><option value="3">3–5 visas</option><option value="6">6+ visas</option></select></div>
+            <div><label for="office">Office requirement</label><select id="office" required><option value="flex">Flexi desk / shared</option><option value="physical">Physical office</option><option value="none">Not sure yet</option></select></div>
+            <div><label for="support">Additional support</label><select id="support" required><option value="basic">Basic setup</option><option value="full">Full setup + bank account</option><option value="growth">Setup + digital growth</option></select></div>
+          </div>
+          <div id="estimate-result" class="mt-7 hidden rounded-2xl bg-[#173d34] p-5 text-white"><p class="text-xs font-extrabold uppercase tracking-[.14em] text-[#b8d5bd]">Indicative setup range</p><div class="mt-2 flex items-end justify-between gap-4"><strong id="estimate-value" class="serif text-3xl text-[#fff]">AED 12,000 – 18,000</strong><span class="text-right text-xs leading-5 text-[#c6ddd0]">Fees vary by authority<br>and activity</span></div></div>
+          <button type="submit" class="btn btn-primary mt-7 w-full">Calculate my range <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+          <p id="estimate-note" class="mt-3 text-center text-xs text-[#71817b]" aria-live="polite">Complete the fields to see your estimate.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="activities" class="scroll-mt-24 section bg-[#f7f6f1]">
+      <div class="container">
+        <div class="reveal text-center"><div class="eyebrow mb-4">Find your activity fit</div><h2 class="text-4xl text-[#173d34] sm:text-5xl">Whatever you’re building, start in the right category.</h2><p class="mx-auto mt-5 max-w-[650px] text-[#62706b]">From first-time founders to established operators, we map your activity to the right licensing route.</p></div>
+        <div class="reveal mt-10 flex flex-wrap justify-center gap-3">
+          <span class="pill">Financials</span><span class="pill">Real Estate & Facility Services</span><span class="pill">Healthcare</span><span class="pill">Education</span><span class="pill">Personal & Community Services</span><span class="pill">Construction & Engineering</span><span class="pill">Energy</span><span class="pill">Metals & Minerals</span><span class="pill">Precious Metals & Stones</span><span class="pill">Food & Agro</span><span class="pill">Shipping & Logistics</span><span class="pill">Automotive Transportation</span><span class="pill">Aviation</span><span class="pill">Crypto & Web3</span><span class="pill">Support Services</span><span class="pill">Personal & Household Goods</span>
+        </div>
+        <div class="reveal mx-auto mt-12 max-w-4xl overflow-hidden rounded-2xl border border-[#dfe5df] bg-white">
+          <div class="grid grid-cols-3 bg-[#dce9df] p-4 text-xs font-extrabold uppercase tracking-[.12em] text-[#31584b]"><span>Consideration</span><span>Mainland</span><span>Free zone</span></div>
+          <div class="grid grid-cols-3 border-t border-[#e6ebe5] p-4 text-sm"><span class="font-bold">Local UAE trade</span><span class="text-[#477267]">Strong fit</span><span class="text-[#62706b]">Activity dependent</span></div>
+          <div class="grid grid-cols-3 border-t border-[#e6ebe5] p-4 text-sm"><span class="font-bold">Setup simplicity</span><span class="text-[#62706b]">Varies by activity</span><span class="text-[#477267]">Often streamlined</span></div>
+          <div class="grid grid-cols-3 border-t border-[#e6ebe5] p-4 text-sm"><span class="font-bold">Best for</span><span class="text-[#62706b]">Local operations</span><span class="text-[#62706b]">Focused businesses</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-mt-24 section bg-[#dce9df]">
+      <div class="container">
+        <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><div class="eyebrow mb-4">Every service, clearly organised</div><h2 class="text-4xl leading-tight text-[#173d34] sm:text-5xl">From first paperwork to daily growth.</h2></div><p class="max-w-[380px] text-sm leading-6 text-[#62706b]">Choose one service or combine them into a practical support plan. Every capability below is available through the Anriyax team.</p></div>
+        <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">01 · Setup</span><h3 class="mt-3 text-2xl text-[#173d34]">Jurisdiction advisory</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Compare Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain, then shortlist the best route for your activity.</p></article>
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">02 · Setup</span><h3 class="mt-3 text-2xl text-[#173d34]">Mainland company setup</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Guidance for mainland licensing, activity selection, approvals, office requirements and a clear setup checklist.</p></article>
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">03 · Setup</span><h3 class="mt-3 text-2xl text-[#173d34]">Free zone company setup</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Compare IFZA, Meydan, SHAMS, SPC and ANC packages based on ownership, visas, office needs and business activity.</p></article>
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">04 · Planning</span><h3 class="mt-3 text-2xl text-[#173d34]">Cost estimation</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Get an indicative range using your activity, licence type, jurisdiction, owners, visas, office and additional support requirements.</p></article>
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">05 · Planning</span><h3 class="mt-3 text-2xl text-[#173d34]">Free consultation</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Talk through your business activity, setup preference and growth plan with a specialist before committing.</p></article>
+          <article class="card reveal p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#e87958]">06 · Operations</span><h3 class="mt-3 text-2xl text-[#173d34]">Visa & office support</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Plan visa capacity and office requirements as part of the setup instead of treating them as last-minute add-ons.</p></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-data-entry-2520ddf40cf04e4ca90659f3bc7ed0a4.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">07 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">Data entry</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Accurate, structured data entry and processing for documents, catalogues, records and business workflows.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-quality-530e42bd006f45e2879ba0e95416d814.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">08 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">Quality auditing</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Validation, error checks and quality control that keep your operational data dependable and usable.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-web-3714daac6eb6484590c150424b9d4db2.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">09 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">Web development</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Professional websites and web applications that give your new business a credible digital home.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-mobile-40c27d7d916045e69935ec3d2980f54b.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">10 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">Mobile apps</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Mobile experiences that help customers discover, use and stay connected to your services.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-ecommerce-4b7233768b1140ad835da887584b766f.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">11 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">E-commerce solutions</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Online stores, product journeys and commerce workflows built to help you launch and sell.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-ai-82728415e6384abca4c00c99deef4319.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">12 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">WhatsApp automation</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Automated customer replies, lead routing and follow-up flows for faster, more consistent conversations.</p></div></article>
+          <article class="card reveal overflow-hidden"><img src="images/services-ai-82728415e6384abca4c00c99deef4319.png" alt="" class="h-32 w-full object-cover"><div class="p-6"><span class="text-xs font-extrabold uppercase tracking-[.14em] text-[#1d5145]">13 · Digital</span><h3 class="mt-3 text-2xl text-[#173d34]">AI automation</h3><p class="mt-2 text-sm leading-6 text-[#62706b]">Practical AI and workflow automation that reduces repetitive work and supports business growth.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="consultation" class="section bg-[#f7f6f1]">
+      <div class="container grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
+        <div class="reveal"><div class="eyebrow mb-4">Your next move</div><h2 class="text-4xl leading-tight text-[#173d34] sm:text-5xl">Let’s make your first decision a confident one.</h2><p class="mt-5 leading-7 text-[#62706b]">Tell us what you’re building. A setup specialist will help you compare options and map the cleanest path forward.</p><div class="mt-8 space-y-4 text-sm font-bold text-[#527065]"><p class="flex items-center gap-3"><i data-lucide="clock-3" class="h-5 w-5 text-[#e87958]"></i>Response within one business day</p><p class="flex items-center gap-3"><i data-lucide="message-circle" class="h-5 w-5 text-[#e87958]"></i>Phone or WhatsApp, whichever suits you</p><p class="flex items-center gap-3"><i data-lucide="sparkles" class="h-5 w-5 text-[#e87958]"></i>Advice shaped around your activity</p></div></div>
+        <form id="consultation-form" class="reveal rounded-[22px] border border-[#dfe5df] bg-white p-6 sm:p-8">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div><label for="form-activity">Business activity *</label><input id="form-activity" name="activity" placeholder="e.g. digital marketing" required></div>
+            <div><label for="preference">Setup preference</label><select id="preference" name="preference"><option>Mainland</option><option>Free zone</option><option>Help me decide</option></select></div>
+            <div><label for="message">What do you need help with?</label><textarea id="message" name="message" rows="3" placeholder="Tell us a little about your plan"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-dark mt-7 w-full">Request free consultation <i data-lucide="arrow-up-right" class="h-4 w-4"></i></button>
+          <p id="form-status" class="mt-4 text-center text-sm font-bold text-[#1d5145]" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#173d34] py-12 text-[#c6ddd0]">
+    <div class="container flex flex-col justify-between gap-8 md:flex-row md:items-end">
+      <div><a href="#hero" class="flex items-center gap-3" aria-label="Return to Anriyax home"><img src="images/Anriyaxlogo.webp" alt="Anriyax" class="h-9 w-auto brightness-0 invert"><span class="text-sm font-extrabold tracking-wide text-white">ANRIYAX</span></a><p class="mt-4 max-w-[360px] text-sm leading-6">UAE business setup and digital growth services for founders building what’s next.</p></div>
+      <div class="text-sm md:text-right"><p class="font-bold text-white">Start a conversation</p><a href="mailto:anriyaxservices@gmail.com" class="mt-2 inline-block hover:text-[#f2a188]">anriyaxservices@gmail.com</a><p class="mt-1"><a href="tel:8287459581" class="hover:text-[#f2a188]">8287459581</a></p></div>
+    </div>
+    <div class="container mt-10 border-t border-[#477267] pt-5 text-xs text-[#91b5a3]">© 2026 Anriyax Services Pvt Ltd. All rights reserved.</div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+      const menuIcon = menuToggle.querySelector("svg");
+      if (menuIcon) menuIcon.setAttribute("data-lucide", isOpen ? "menu" : "x");
+      lucide.createIcons();
+    });
+    mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+    }));
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add("visible"); }), { threshold: .12 });
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    const costForm = document.getElementById("cost-form");
+    costForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const jurisdiction = document.getElementById("jurisdiction").value;
+      const visas = Number(document.getElementById("visas").value);
+      const office = document.getElementById("office").value;
+      const support = document.getElementById("support").value;
+      if (!jurisdiction) return;
+      let low = jurisdiction === "mainland" ? 18000 : jurisdiction === "freezone" ? 12000 : 15000;
+      let high = jurisdiction === "mainland" ? 30000 : jurisdiction === "freezone" ? 22000 : 26000;
+      if (visas >= 3) { low += 5000; high += 9000; } else if (visas === 1) { low += 2500; high += 4500; }
+      if (office === "physical") { low += 8000; high += 18000; }
+      if (support === "full") { low += 2500; high += 5000; } else if (support === "growth") { low += 5000; high += 10000; }
+      document.getElementById("estimate-value").textContent = `AED ${low.toLocaleString()} – ${high.toLocaleString()}`;
+      document.getElementById("estimate-result").classList.remove("hidden");
+      document.getElementById("estimate-note").textContent = "This is an indicative range. We’ll confirm the exact route in your consultation.";
+      document.getElementById("estimate-step").textContent = "5 / 5";
+    });
+
+    document.getElementById("consultation-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      document.getElementById("form-status").textContent = "Thank you — your request is ready for our setup team. We’ll be in touch shortly.";
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>
